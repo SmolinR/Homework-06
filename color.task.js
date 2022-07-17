@@ -7,7 +7,7 @@ const puppeteer = require('puppeteer');
         const page = await browser.newPage();
         await page.goto('https://pptr.dev/');
         await page.evaluate(() => { document.querySelector('#__docusaurus > nav').style.backgroundColor = '#1F54C0'; });
-        await page.screenshot({path: 'test.png'})
+        await page.screenshot({path: 'color.png'})
     } catch (error) {
         await browser.close();
     } finally {
